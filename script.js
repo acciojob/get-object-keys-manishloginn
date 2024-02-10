@@ -2,11 +2,11 @@
 
 let student = {
 	name : "Manish",
-	getKeys : function () {
-		console.log(this.name)
-	}
+};
+
+Object.prototype.getKeys=function () {
+  return Object.keys(this)
 }
 
-student.getKeys()
-
+console.log(student.getKeys())
 
